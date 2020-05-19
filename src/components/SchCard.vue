@@ -4,19 +4,85 @@
       <v-list>
         <v-header class="mx-4">Tasks</v-header>
         <template>
+          <v-list-item>
+            <template>
+              <v-list-item-content>
+                <v-list-item-title>
+                  <v-row>
+                    <v-col cols="3">Evaluation</v-col>
+                    <v-col cols="2">
+                      <div v-ripple>
+                        <v-icon size="18" color="primary">mdi-calendar-blank</v-icon>
+                        <span class="overline">SCHEDULE</span>
+                      </div>
+                    </v-col>
+                    <v-col cols="1"></v-col>
+                    <v-col cols="1">
+                      <div v-ripple>
+                        <v-icon size="18" color="black">mdi-share-variant</v-icon>
+                      </div>
+                    </v-col>
+                    <v-col cols="1"></v-col>
+                    <v-col cols="2">
+                      <v-icon size="18" color="black">mdi-send</v-icon>
+                    </v-col>
+                    <v-col cols="2">
+                      <span class="overline">MORE</span>
+                    </v-col>
+                  </v-row>
+                </v-list-item-title>
+              </v-list-item-content>
+            </template>
+          </v-list-item>
+
           <v-divider></v-divider>
           <v-list-item>
             <template>
               <v-list-item-content>
-                <v-list-item-title>Evaluation</v-list-item-title>
-                <v-list-item-subtitle class="overline">
-                  2MIN AGO &bull;
-                  <v-icon size="12">mdi-calendar-blank</v-icon>DUE : 3:00 PM 02/05/2020
-                </v-list-item-subtitle>
+                <v-list-item-title>
+                  <v-row>
+                    <v-col cols="3">Job Name</v-col>
+                    <v-col cols="3"></v-col>
+                    <v-col cols="3">
+                      <v-icon size="18" color="black">mdi-check</v-icon>
+                      <span class="overline">Proceed</span>
+                    </v-col>
+                    <v-col cols="1">
+                      <v-icon size="18" color="black">mdi-cancel</v-icon>
+                    </v-col>
+                    <v-col cols="2">
+                      <v-icon size="24" color="black">mdi-dots-horizontal</v-icon>
+                    </v-col>
+                  </v-row>
+                </v-list-item-title>
               </v-list-item-content>
-              <v-list-item-avatar color="indigo">
-                <span class="white--text">KP</span>
-              </v-list-item-avatar>
+            </template>
+          </v-list-item>
+
+          <v-divider></v-divider>
+          <v-list-item>
+            <template>
+              <v-list-item-content>
+                <v-list-item-title>
+                  <v-row>
+                    <v-col cols="3">Job Name</v-col>
+                    <v-col cols="3"></v-col>
+                    <v-col cols="2">
+                      <div v-ripple>
+                        <v-icon size="18" color="black">mdi-check</v-icon>
+                        <span class="overline">Proceed</span>
+                      </div>
+                    </v-col>
+                    <v-col cols="1"></v-col>
+                    <v-col cols="1">
+                      <v-icon size="18" color="black">mdi-cancel</v-icon>
+                    </v-col>
+                    <v-col cols="2">
+                      <v-icon size="24" color="black">mdi-dots-horizontal</v-icon>
+                    </v-col>
+                  </v-row>
+                </v-list-item-title>
+              </v-list-item-content>
             </template>
           </v-list-item>
         </template>

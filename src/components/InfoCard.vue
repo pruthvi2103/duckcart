@@ -2,13 +2,64 @@
   <div>
     <v-card>
       <v-list>
-        <v-header class="mx-4">Experience</v-header>
-        <v-list-item three-line>
+        <v-header class="mx-4">Information</v-header>
+        <v-list-item one-line>
           <v-list-item-content>
-            <v-list-item-title>Lead Designer</v-list-item-title>
-            <v-list-item-subtitle>Apple inc.</v-list-item-subtitle>
-            <v-list-item-subtitle>2010-2020</v-list-item-subtitle>
-            <v-list-item-subtitle>During my internship, I developed xyz abc def jkl lmio aws</v-list-item-subtitle>
+            <v-list-item-title>
+              <v-row>
+                <v-col cols="2">
+                  <span class="overline">EMAIL</span>
+                </v-col>
+                <v-col cols="10">
+                  <span class="grey--text caption">johnappleseed@gmail.com</span>
+                </v-col>
+              </v-row>
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-divider></v-divider>
+        <v-list-item one-line>
+          <v-list-item-content>
+            <v-list-item-title>
+              <v-row>
+                <v-col cols="2">
+                  <span class="overline">GITHUB</span>
+                </v-col>
+                <v-col cols="10">
+                  <span class="grey--text caption">johnappleseed@gmail.com</span>
+                </v-col>
+              </v-row>
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-divider></v-divider>
+        <v-list-item one-line>
+          <v-list-item-content>
+            <v-list-item-title>
+              <v-row>
+                <v-col cols="2">
+                  <span class="overline">LINKEDIN</span>
+                </v-col>
+                <v-col cols="10">
+                  <span class="grey--text caption">johnappleseed@gmail.com</span>
+                </v-col>
+              </v-row>
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-divider></v-divider>
+        <v-list-item one-line>
+          <v-list-item-content>
+            <v-list-item-title>
+              <v-row>
+                <v-col cols="2">
+                  <span class="overline">SOCIAL</span>
+                </v-col>
+                <v-col cols="10">
+                  <span class="grey--text caption">johnappleseed@gmail.com</span>
+                </v-col>
+              </v-row>
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>

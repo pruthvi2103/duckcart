@@ -33,6 +33,9 @@
           <v-col cols="6">
             <SchCard></SchCard>
           </v-col>
+          <v-col cols="6">
+            <ExpCard></ExpCard>
+          </v-col>
         </v-row>
       </v-container>
     </v-content>
@@ -50,6 +53,7 @@ import TasksCard from "./components/TasksCard";
 import InfoCard from "./components/InfoCard";
 import EduCard from "./components/EduCard";
 import SchCard from "./components/SchCard";
+import ExpCard from "./components/ExpCard";
 export default {
   components: {
     SkillsCard,
@@ -57,7 +61,8 @@ export default {
     TasksCard,
     InfoCard,
     EduCard,
-    SchCard
+    SchCard,
+    ExpCard
   },
   data: () => ({
     drawers: ["Default (no property)", "Permanent", "Temporary"],
