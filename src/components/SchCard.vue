@@ -2,7 +2,6 @@
   <div>
     <v-card class="mx-auto">
       <v-list>
-        <v-header class="mx-4">Tasks</v-header>
         <template>
           <v-list-item>
             <template>
