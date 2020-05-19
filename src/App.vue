@@ -1,28 +1,76 @@
+  
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app id="sandbox">
+    <v-navigation-drawer v-model="primaryDrawer.model" app overflow></v-navigation-drawer>
+
+    <v-app-bar :clipped-left="primaryDrawer.clipped" dense flat color="white" app>
+      <v-app-bar-nav-icon
+        v-if="primaryDrawer.type !== 'permanent'"
+        @click.stop="primaryDrawer.model = !primaryDrawer.model"
+      ></v-app-bar-nav-icon>
+      <v-toolbar-title>Vuetify</v-toolbar-title>
+    </v-app-bar>
+
+    <v-content>
+      <v-container fluid>
+        <v-row align="center" justify="center">
+          <v-col cols="6">
+            <SkillsCard></SkillsCard>
+          </v-col>
+          <v-col cols="6">
+            <TnotesCard></TnotesCard>
+          </v-col>
+          <v-col cols="6">
+            <TasksCard></TasksCard>
+          </v-col>
+          <v-col cols="6">
+            <InfoCard></InfoCard>
+          </v-col>
+
+          <v-col cols="6">
+            <EduCard></EduCard>
+          </v-col>
+          <v-col cols="6">
+            <SchCard></SchCard>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-content>
+
+    <v-footer :inset="footer.inset" app>
+      <span class="px-4">&copy; {{ new Date().getFullYear() }}</span>
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import SkillsCard from "./components/SkillsCard";
+import TnotesCard from "./components/TnotesCard";
+import TasksCard from "./components/TasksCard";
+import InfoCard from "./components/InfoCard";
+import EduCard from "./components/EduCard";
+import SchCard from "./components/SchCard";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    SkillsCard,
+    TnotesCard,
+    TasksCard,
+    InfoCard,
+    EduCard,
+    SchCard
+  },
+  data: () => ({
+    drawers: ["Default (no property)", "Permanent", "Temporary"],
+    primaryDrawer: {
+      model: null,
+      type: "default (no property)",
+      clipped: false,
+      floating: false,
+      mini: false
+    },
+    footer: {
+      inset: false
+    }
+  })
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
